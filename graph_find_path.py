@@ -3,7 +3,8 @@ test = {'a':['b','c','f'],
 		'c':['b','d','e'],
 		'd':['b','c'],
 		'e':['c'],
-		'f':['a']
+		'f':['a'],
+		'g':['a','b','c']
 }
 
 def find_path(graph, start, end, path = []):
