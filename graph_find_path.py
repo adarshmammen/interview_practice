@@ -3,7 +3,7 @@ test = {'a':['b','c'],
 		'c':['b','d','e'],
 		'd':['b','c'],
 		'e':['c'],
-		'f':[]
+		'f':['a']
 }
 
 def find_path(graph, start, end, path = []):
@@ -21,4 +21,4 @@ def find_path(graph, start, end, path = []):
 	return None
 
 if __name__ == "__main__":
-	print(find_path(test,'a','e'))
+	print(find_path(test,'a','f'))
