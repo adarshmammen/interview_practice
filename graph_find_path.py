@@ -20,5 +20,23 @@ def find_path(graph, start, end, path = []):
 			if newpath: return newpath
 	return None
 
+def find_all_path(graph, start, end, path = []):
+	# backtracking algorithm
+	path = path + [start]
+	if start == end:
+		return [path]
+	if start not in graph:
+		return None
+	paths = []
+	for node in graph[start]:
+		if node not in path: #no cycles
+			#partial solution
+			newpaths = find_path(graph,node,end,path)
+		if newpaths:
+			for newpath in newpaths:
+				paths.append(newpaths) 
+	return paths
+
 if __name__ == "__main__":
 	print(find_path(test,'a','f'))
+	print(find_all_path(test,'a','d'))
