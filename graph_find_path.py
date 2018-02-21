@@ -62,6 +62,7 @@ def shortest_path(graph, start, end, path = []):
 	return paths
 
 if __name__ == "__main__":
-	print(find_path(test,'a','f'))
-	print(find_all_path(test,'a','d'))
-	print(shortest_path(test,'a','d'))
+	#print(find_path(test,'a','f'))
+	#print(find_all_path(test,'a','d'))
+	#print(shortest_path(test,'a','d'))
+	pass
